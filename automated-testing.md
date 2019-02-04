@@ -20,19 +20,16 @@ slidenumbers: true
 # [fit] You may have heard
 # [fit] of unit testing...
 
-
 ---
 
-# [fit] With Unit Testing you can break down
-# [fit] functions into small chucks to test
+# With Unit Testing you break down functionality into small chucks (units) and validate one bit at a time.
 
 ---
 
 [.autoscale: true]
 
-
 # For example...
-# A subscription purchase
+# A fake subscription purchase
 
 * User logs in
 * User makes purchase
@@ -44,7 +41,7 @@ slidenumbers: true
 [.autoscale: true]
 
 * User logs in
-    * Get current user
+    * *Get current user*
     * Validate
     * Log user into site
 * User makes purchase
@@ -64,12 +61,12 @@ slidenumbers: true
 
 ---
 
-# [fit] Unit testing is great
-# [fit] But simple browser testing is also great
+# [fit] **Unit testing is great,**
+# but simple browser testing give you realistic experiences
 
 ---
 
-## Sadly though it's:
+## Browser testing is:
 - Time consuming
 - Easy to forget to test something important
 - New developers on projects might not know what to test
@@ -81,32 +78,215 @@ slidenumbers: true
 
 ---
 
+# Install with 4 commands
+
+
+![inline](assets/dusker.png)
+
+---
+
+Here is a very simple test. This looks for text on screen
+
+<br>
+
+```php
+public function testFindText()
+{
+    $this->browse(function (Browser $browser) {
+        $browser->visit('/')
+                ->assertSee('Text on Homepage');
+    });
+}
+```
+
+---
+
+Here is a very simple test. This looks for text on screen
+
+<br>
+
+[.code-highlight: 1,2,3,6,7,8]
+
+
+```php
+public function testFindText()
+{
+    $this->browse(function (Browser $browser) {
+        $browser->visit('/')
+                ->assertSee('Text on Homepage');
+    });
+}
+```
+
+---
+
+Here is a very simple test. This looks for text on screen
+
+<br>
+
+[.code-highlight: 4]
+
+
+```php
+public function testFindText()
+{
+    $this->browse(function (Browser $browser) {
+        $browser->visit('/')
+                ->assertSee('Text on Homepage');
+    });
+}
+```
+
+---
+
+Here is a very simple test. This looks for text on screen
+
+<br>
+
+[.code-highlight: 5]
+
+
+```php
+public function testFindText()
+{
+    $this->browse(function (Browser $browser) {
+        $browser->visit('/')
+                ->assertSee('Text on Homepage');
+    });
+}
+```
+
+---
+
+You can even fill out a form:
+
+```php
+public function testBasicForm()
+{
+    $this->browse(function (Browser $browser) {
+        $browser->visit('/form-page/')
+                ->type('name_field', 'Cool name')
+                ->type('email_field', 'coolemail@gmail.com')
+                ->press('Submit')
+                ->waitForText('Thanks for contacting us!')
+                ->assertSee('We will get in touch with you shortly');
+    });
+}
+```
+---
+
+You can even fill out a form:
+
+[.code-highlight: 4]
+
+```php
+public function testBasicForm()
+{
+    $this->browse(function (Browser $browser) {
+        $browser->visit('/form-page/')
+                ->type('name_field', 'Cool name')
+                ->type('email_field', 'coolemail@gmail.com')
+                ->press('Submit')
+                ->waitForText('Thanks for contacting us!')
+                ->assertSee('We will get in touch with you shortly');
+    });
+}
+```
+---
+
+You can even fill out a form:
+
+[.code-highlight: 5,6]
+
+```php
+public function testBasicForm()
+{
+    $this->browse(function (Browser $browser) {
+        $browser->visit('/form-page/')
+                ->type('name_field', 'Cool name')
+                ->type('email_field', 'coolemail@gmail.com')
+                ->press('Submit')
+                ->waitForText('Thanks for contacting us!')
+                ->assertSee('We will get in touch with you shortly');
+    });
+}
+```
+---
+
+You can even fill out a form:
+
+[.code-highlight: 7]
+
+```php
+public function testBasicForm()
+{
+    $this->browse(function (Browser $browser) {
+        $browser->visit('/form-page/')
+                ->type('name_field', 'Cool name')
+                ->type('email_field', 'coolemail@gmail.com')
+                ->press('Submit')
+                ->waitForText('Thanks for contacting us!')
+                ->assertSee('We will get in touch with you shortly');
+    });
+}
+```
+---
+
+You can even fill out a form:
+
+[.code-highlight: 8,9]
+
+```php
+public function testBasicForm()
+{
+    $this->browse(function (Browser $browser) {
+        $browser->visit('/form-page/')
+                ->type('name_field', 'Cool name')
+                ->type('email_field', 'coolemail@gmail.com')
+                ->press('Submit')
+                ->waitForText('Thanks for contacting us!')
+                ->assertSee('We will get in touch with you shortly');
+    });
+}
+```
+---
+
+![114%](assets/asserts.png)
+
+---
+
+# [fit] Run the tests with:
+
+<br>
+
+# [fit] **`php artisan dusk`**
+
+---
+
+<br>
+
+## [fit] DEMO TIME
+
+---
+
+# The future
+
+![inline](assets/future.png)
+
+http://go.testim.io/ai-based-testing-the-future-of-test-automation
+
+---
+
 # THANKS!
 
 Follow me:
 @david_darke
 
-Follow my studio:
+Follow the studio:
 @atomicsmash
 
 Get presentation here:
-https://github.com/daviddarke/A-modern-WordPress-development-workflow
+https://github.com/daviddarke/automated-browser-testing
 
 ---
 [.autoscale: true]
-
-### Tool list
-
-- Capistrano | Used to deploy code from GIT to servers.
-- Composer | Used to pulling PHP dependancies like Wordpress.
-- Forge | Used for provisioning servers
-- GIT | A version control system for storing and sharing code.
-- Logflume | Gets uploads onto S3 so they are sharable with other developers
-- Logsmith | The development framework made by Atomic Smash
-- Release belt | Used for storing premium plugins and making them privately accessible to composer.
-
-[^1]: https://hackernoon.com/please-use-git-da3bea7d1234
-
-[^2]: https://www.atomicsmash.co.uk/blog/using-composer-wordpress-development/
-
-[^3]: https://www.atomicsmash.co.uk/blog/our-current-development-tools-and-workflows/
