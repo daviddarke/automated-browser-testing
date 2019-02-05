@@ -12,13 +12,25 @@ slidenumbers: true
 
 ---
 
-# [fit] Automate
-# [fit] EVERYTHING
+# We all test now...
 
 ---
 
-# [fit] You may have heard
-# [fit] of unit testing...
+## Standard browser testing is:
+- Time consuming.
+- VERY easy to forget to test something important.
+- New developers on projects might not know what to test.
+- Dev aren't lazy, but most of the time there is something more important they should be working on.
+
+---
+
+# [fit] AUTOMATE
+# [fit] EVERYTHING!!!
+
+---
+
+# [fit] You probably have heard
+# [fit] of "unit testing"...
 
 ---
 
@@ -62,19 +74,21 @@ slidenumbers: true
 ---
 
 # [fit] **Unit testing is great,**
-# but simple browser testing give you realistic experiences
+# but simple browser testing give you realistic user experiences
 
 ---
-
-## Browser testing is:
-- Time consuming
-- Easy to forget to test something important
-- New developers on projects might not know what to test
-
----
-
 
 ![ 200% ](assets/dusk.pdf)
+
+---
+
+## What does it actually do though?
+
+![ 200% ](assets/dusk.pdf)
+
+---
+
+![](assets/dusker.png)
 
 ---
 
@@ -83,9 +97,11 @@ slidenumbers: true
 
 ![inline](assets/dusker.png)
 
+https://github.com/unglud/dusker
+
 ---
 
-Here is a very simple test. This looks for text on screen
+Here is a very simple test. This looks for text on a screen
 
 <br>
 
@@ -249,9 +265,6 @@ public function testBasicForm()
     });
 }
 ```
----
-
-![114%](assets/asserts.png)
 
 ---
 
@@ -261,11 +274,16 @@ public function testBasicForm()
 
 # [fit] **`php artisan dusk`**
 
+
 ---
 
 <br>
 
 ## [fit] DEMO TIME
+
+---
+
+![114%](assets/asserts.png)
 
 ---
 
