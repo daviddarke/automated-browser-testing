@@ -4,5 +4,5 @@ This is a [Deckset](https://www.decksetapp.com) presentation originally created 
 
 The talk involves an overview of some key points around automated browser testing using Laravel Dusk.
 
-## [View Slideshow](https://www.slideshare.net/DavidDarke/a-modern-wordpress-development-workflow/DavidDarke/a-modern-wordpress-development-workflow)
-## [View markdown](https://github.com/daviddarke/A-modern-WordPress-development-workflow/blob/master/dev-process.md)
+## ~View Slideshow~
+## [View markdown](https://github.com/daviddarke/automated-browser-testing/blob/master/automated-testing.md)
