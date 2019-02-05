@@ -289,7 +289,7 @@ public function testBasicForm()
 
 <br>
 
-## [fit] DEMO TIME
+## [fit] DEMO TIME 😬
 
 ---
 
@@ -333,6 +333,3 @@ Follow the studio:
 
 Get presentation here:
 https://github.com/daviddarke/automated-browser-testing
-
----
-[.autoscale: true]
