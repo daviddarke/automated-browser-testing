@@ -12,11 +12,15 @@ slidenumbers: true
 
 ---
 
-# We all test now...
+# [fit] Current testing trends
+
+- Everyone does some form of testing
+- Testing results might not be logged anywhere
+- Lots of testing happens when a project launches, but this may reduce as a site is rolled out
 
 ---
 
-# Lots of testing when a project launches:
+# A lot of testing might be around requirements or client questions:
 
 ![inline](assets/IE11.jpg)
 
@@ -30,17 +34,18 @@ slidenumbers: true
 
 ---
 
+# [fit] WHY CAN'T WE
 # [fit] AUTOMATE
-# [fit] EVERYTHING!!!
+# [fit] THIS?!?!
 
 ---
 
 # [fit] You probably have heard
-# [fit] of "unit testing"...
+# [fit] of **unit testing**
 
 ---
 
-# With Unit Testing you break down functionality into small chucks (units) and validate one bit at a time.
+# With Unit Testing you break down functionality into small chunks (units) and validate one bit at a time.
 
 ---
 
@@ -67,7 +72,7 @@ slidenumbers: true
     * Order emails are sent
 * Get subscription information from the order
     * Check order for subscription product
-    * Order emails are sent
+    * Sign up emails might be sent
 * Assign subscription to user
     * Check subscription was purchased
     * Add subscription to user
@@ -280,7 +285,6 @@ public function testBasicForm()
 
 # [fit] **`php artisan dusk`**
 
-
 ---
 
 <br>
@@ -290,6 +294,14 @@ public function testBasicForm()
 ---
 
 ![114%](assets/asserts.png)
+
+---
+
+# [fit] 🤔 Endless possibilities
+
+- You don't have to just look at the frontend of the site
+- You can use special testing databases
+- Maybe even create special API endpoint to fact check some tests
 
 ---
 
