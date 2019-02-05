@@ -14,9 +14,9 @@ slidenumbers: true
 
 # [fit] Current testing trends
 
-- Everyone does some form of testing
-- Testing results might not be logged anywhere
-- Lots of testing happens when a project launches, but this may reduce as a site is rolled out
+- Everyone does some form of testing (even if it isn't structured)
+- Testing results might not be logged anywhere (critical paths)
+- Lots of testing happens when a project launches, but this may reduce as smaller features/updates are deployed
 
 ---
 
@@ -26,7 +26,7 @@ slidenumbers: true
 
 ---
 
-# Standard browser testing is:
+# Standard browser testing isn't perfect
 - Time consuming.
 - VERY easy to forget to test something important.
 - New developers on projects might not know what to test.
@@ -309,9 +309,26 @@ public function testBasicForm()
 
 ---
 
+# [fit] When should these tests be added?
+
+---
+
 # [fit] How much of the codebase should I test?
 
 ![inline](assets/tests-cant-fail-if-no-tests.jpg)
+
+---
+
+# Standard browser testing isn't perfect.. **let's review**
+- Time consuming.
+- VERY easy to forget to test something important.
+- New developers on projects might not know what to test.
+- Dev aren't lazy, but most of the time there is something more important they should be working on.
+
+
+---
+
+# [fit] Do we actually use it?
 
 ---
 
@@ -333,3 +350,9 @@ Follow the studio:
 
 Get presentation here:
 https://github.com/daviddarke/automated-browser-testing
+
+---
+
+<br>
+
+# [fit] Questions? 🤓
