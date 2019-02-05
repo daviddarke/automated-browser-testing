@@ -16,7 +16,13 @@ slidenumbers: true
 
 ---
 
-## Standard browser testing is:
+# Lots of testing when a project launches:
+
+![inline](assets/IE11.jpg)
+
+---
+
+# Standard browser testing is:
 - Time consuming.
 - VERY easy to forget to test something important.
 - New developers on projects might not know what to test.
