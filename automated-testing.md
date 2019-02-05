@@ -305,6 +305,16 @@ public function testBasicForm()
 
 ---
 
+# [fit] When should these tests be added?
+
+---
+
+# [fit] How much of the codebase should I test?
+
+![inline](assets/tests-cant-fail-if-no-tests.jpg)
+
+---
+
 # The future
 
 ![inline](assets/future.png)
